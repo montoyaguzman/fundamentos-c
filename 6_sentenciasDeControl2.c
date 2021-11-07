@@ -7,8 +7,11 @@ int main(void)
 {
     switch (age)
     {
-    case 0 ... 5:
+    case 0:
         printf("Bebé\n");
+        break;
+    case 1 ... 5:
+        printf("Bebé grande\n");
         break;
     case 6 ... 11:
         printf("Infancia\n");
