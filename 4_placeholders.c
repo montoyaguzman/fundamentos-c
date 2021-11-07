@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 int main(void)
 {
@@ -7,15 +8,16 @@ int main(void)
     int numero = 22;
     int *puntero = &numero;
     float decimal = 9.9;
-    char porcentaje = '%';
+    char porcentaje = '1';
+    bool flag = true;
 
     printf("\nletra: %c", letra);
-    printf("\nletra: %s", nombre);
-
-    printf("\nletra: %d", numero);
-    printf("\nletra: %p", puntero);
-    printf("\nletra: %f", decimal);
-    printf("\nletra: %%", porcentaje);
-
+    printf("\nnombre: %s", nombre);
+    printf("\nnumero: %d", numero);
+    printf("\nnumero2: %i", numero);
+    printf("\npuntero: %p", puntero);
+    printf("\ndecimal: %f", decimal);
+    printf("\nporcentaje: %c%%", porcentaje);
+    printf("\nflag como entero  %i", flag);
     return 0;
 }
