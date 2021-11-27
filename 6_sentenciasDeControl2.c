@@ -3,6 +3,7 @@
 
 int age = 99;
 
+#include <stdio.h>
 int main(void)
 {
     switch (age)
