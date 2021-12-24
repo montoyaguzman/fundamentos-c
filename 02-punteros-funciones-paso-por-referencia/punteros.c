@@ -13,7 +13,7 @@ int main()
     // Un puntero es una variable que almacena una dirección de memoria.
     int *punteroDeA = &a;
     printf("\nValor: %i", a);
-    printf("\nValor: %d", *punteroDeA);
+    printf("\nValor: %i", *punteroDeA);
     printf("\nApuntador: %p", punteroDeA);
 
     return 0;
