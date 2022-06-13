@@ -1,0 +1,92 @@
+Repaso de GIT
+
+1. Comandos locales.
+2. Protocolos de comunicacion.
+3. Llave SSH.
+4. Areas de Git.
+5. Comandos remotos.
+5. Explicar modelo de neumman.
+6. Explicar punteros con caja de zapatos.
+7. Concepto de importacion, modulo, preprocesor command, funciones y 
+parametros/argumentos.
+8. Reaprender cosas
+
+Arrays
++son estructuras estaticas
++diferencia entre matriz y vector
++index = subscript
++inicializacion e impresion de dos arrays
+
+Strings
++ Que es un string
++ En C no existen como los strings
++ Declaracion tipica de un string
++ Strings en c
++ Funciones para strings en c.
+
+Funciones
+Paso de parametros por valor y por referencia
+
+Punteros
+%x formato hexadecimal
+declaracion de punteros
+
+#include <stdio.h>
+
+int main() {
+    int j = 63;
+    int *p = NULL;
+    p = &j; 
+    
+    printf("The address of j is %x\n", &j);
+    printf("p contains address %x\n", p);
+    printf("The value of j is %d\n", j);
+    printf("p is pointing to the value %d\n", *p);
+}
+
+Inicializacion en null
+* para declarar pero tambien para saber a que valor apuntan
+referencia y direccion
+desreferencia o indireccion
+
+puntero de un puntero
+int x = 12;
+int *p = NULL
+int **ptr = NULL;
+p = &x;
+ptr = &p;
+
+Operadores con punteros
+#include <stdio.h>
+
+int main() {
+    int x = 5;
+    int y;
+    int *p = NULL;
+    p = &x;
+    
+    y = *p + 2; /* y is assigned 7 */
+    y += *p;     /* y is assigned 12 */
+    *p = y;       /* x is assigned 12 */
+    (*p)++;      /* x is incremented to 13 */
+
+    printf("p is pointing to the value %d\n", *p); 
+}
+
+
+Punteros para arrays
+#include <stdio.h>
+
+int main() {
+    int a[5] = {22, 33, 44, 55, 66};
+    int *ptr = NULL;
+    int i;
+    
+    ptr = a;
+    for (i = 0; i < 5; i++) {
+        printf("%d ", *(ptr + i));
+    }
+}
+
+
+Punteros con funciones

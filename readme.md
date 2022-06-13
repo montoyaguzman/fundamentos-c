@@ -17,15 +17,15 @@
     2.4 Condicionales
     2.5 Ciclos
     2.6 Diagramas de flujo
-    2.7 Pseudocofigo
+    2.7 Pseudocodigo
     2.8 Estructura de un programa en C
 
 ## 3 Git basico
 
     3.1 Comandos en la terminal
     3.2 Controladores de versiones
-    3.3 Working directory, Stagging area, repositorio local
-    3.4 Stasheo y commits.
+    3.3 Working directory, stagging area, repositorio local
+    3.4 Stasheo y commits
     3.5 Model branch
     3.6 Viajes en el tiempo y merge.
 
